@@ -24,7 +24,6 @@ public class BanqueServiceApplication {
 		return args -> {
 			for (int i=0 ; i<10 ; i++){
 				BanqueAccount banqueAccount = BanqueAccount.builder()
-						.Id(UUID.randomUUID().toString())
 						.type(Math.random()>0.5? AccountType.Current_Account:AccountType.Saving_Account)
 						.Solde(10000+Math.random()*9000)
 						.devise("MAD")
